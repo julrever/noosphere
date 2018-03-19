@@ -86,6 +86,7 @@ nav{
     padding: 45px 0 10px 0;
     background-color:#707070; /*494949*/
     box-shadow:2px 2px 2px #ccc;
+    text-align: left;
 }
 
 nav a{
@@ -95,10 +96,11 @@ nav a{
     color:#F0F4F5;
     font-weight:bold;
     font-size:13px;
-    text-decoration:none ;
+    text-decoration:none;
     line-height:1;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     background-color:transparent;
+    text-indent: 10px;
 
     -webkit-transition:all 0.75s;
     -moz-transition:all 0.75s;

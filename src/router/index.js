@@ -6,6 +6,7 @@ import Prices from '@/components/Prices'
 import Services from '@/components/Services'
 import ForDoctors from '@/components/Fordoctors'
 import Spec from '@/components/Spec'
+import About from '@/components/About'
 
 Vue.use(Router)
 
@@ -37,9 +38,14 @@ export default new Router({
       component: ForDoctors
     },
     {
-      path: '/spec',
+      path: '/specialists',
       name: 'Spec',
       component: Spec
+    },
+    {
+      path: '/about',
+      name: 'About',
+      component: About
     }
   ]
 })

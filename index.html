@@ -5,11 +5,11 @@
     <title>Ноосфера</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/static/main.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css" />
   </head>
   <body>
     <header>
-      <div id="logo"><img src="/static/logo.png" height="25px"></div>
+      <div id="logo"><img src="/static/images/logo.png" height="25px"></div>
       <div id="number">Телефон: +7 (812) 312-01-95<br>
         Горячая линия: +7 (812) 951-35-50</div>
     </header>
@@ -18,12 +18,12 @@
 
       <a @click="openMenu = !openMenu">Главная</a>
       <div class="lower" v-show="openMenu">
-        <router-link to="/main">Главная</router-link>
-        <router-link to="/services">Услуги</router-link>
-        <router-link to="/prices">Цены</router-link>
-        <router-link to="/spec">Наши специалисты</router-link>
-        <router-link to="/fordoctors">Для врачей</router-link>
-        <router-link to="/main">О клинике</router-link>
+        <router-link to="/main"><img src="/static/images/home-button.png" height="15px"> &nbsp;&nbsp;&nbsp;Главная</router-link>
+        <router-link to="/services"><img src="/static/images/medicine-briefcase.png" height="15px"> &nbsp;&nbsp;&nbsp;Услуги</router-link>
+        <router-link to="/prices"><img src="/static/images/tag.png" height="15px"> &nbsp;&nbsp;&nbsp;Цены</router-link>
+        <router-link to="/specialists"><img src="/static/images/doctor.png" height="15px"> &nbsp;&nbsp;&nbsp;Наши специалисты</router-link>
+        <router-link to="/fordoctors"><img src="/static/images/businessman.png" height="15px"> &nbsp;&nbsp;&nbsp;Для врачей</router-link>
+        <router-link to="/about"><img src="/static/images/hospital-building.png" height="15px"> &nbsp;&nbsp;&nbsp;О клинике</router-link>
       </div>
       <hr>
 
