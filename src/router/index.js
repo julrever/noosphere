@@ -7,6 +7,10 @@ import Services from '@/components/Services'
 import ForDoctors from '@/components/Fordoctors'
 import Spec from '@/components/Spec'
 import About from '@/components/About'
+import Neck from '@/components/services/Neck'
+import Chest from '@/components/services/Chest'
+import Lumbar from '@/components/services/Lumbar'
+import Sacral from '@/components/services/Sacral'
 
 Vue.use(Router)
 
@@ -14,11 +18,6 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    },
-    {
-      path: '/main',
       name: 'Main',
       component: Main
     },
@@ -30,7 +29,29 @@ export default new Router({
     {
       path: '/services',
       name: 'Services',
-      component: Services
+      component: Services,
+      children: [
+        {
+          path: 'neck',
+          name: 'Neck',
+          component: Neck
+        },
+        {
+          path: 'chest',
+          name: 'Chest',
+          component: Chest
+        },
+        {
+          path: 'lumbar',
+          name: 'Lumbar',
+          component: Lumbar
+        },
+        {
+          path: 'sacral',
+          name: 'Sacral',
+          component: Sacral
+        }
+      ]
     },
     {
       path: '/fordoctors',

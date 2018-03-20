@@ -12,6 +12,6 @@ new Vue({
   el: '#main',
   router,
   data: {
-    openMenu: false
+    openMenu: true
   }
 })

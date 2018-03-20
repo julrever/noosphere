@@ -1,4 +1,5 @@
 <template>
+<div id="container">
 <table width="100%" class="spec">
   <tr>
     <td class="no-spec"></td>
@@ -49,4 +50,5 @@
     <br>Медицинская сестра</div></td>
   </tr>
 </table>
+</div>
 </template>

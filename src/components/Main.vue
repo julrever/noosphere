@@ -1,5 +1,5 @@
 <template>
-<div>
+<div id="container">
 <h2>Клиника лечения позвоночника «Ноосфера»</h2>
 
 <table>

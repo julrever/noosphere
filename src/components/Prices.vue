@@ -1,5 +1,5 @@
 <template>
-<div>
+<div id="container">
 <h3 class="price-h">Стоимость услуг по лечению на аппарате DRX9000, DRX900C и иглорефлексотерапии</h3>
 <table class="price-table">
   <tr>
