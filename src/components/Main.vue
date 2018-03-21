@@ -1,7 +1,6 @@
 <template>
-<div id="container">
-<h2>Клиника лечения позвоночника «Ноосфера»</h2>
-
+<div>
+<h2>Клиника лечения позвоночника «Ноосфера»</h2><hr>
 <table>
   <tr>
     <td><iframe width="560" height="315" src="https://www.youtube.com/embed/KlY2VCmAlnE?rel=0&amp;controls=0&amp;showinfo=0"
@@ -48,5 +47,6 @@
 о своем организме уже сегодня – при обнаружении первых проблем с позвоночником
 обращайтесь в клинику «Ноосфера, мы всегда рады прийти вам на помощь!</p>
 </div>
+
 </div>
 </template>

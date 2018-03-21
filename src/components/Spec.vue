@@ -1,5 +1,6 @@
 <template>
-<div id="container">
+<div>
+<h2>Специалисты</h2><hr>
 <table width="100%" class="spec">
   <tr>
     <td class="no-spec"></td>

@@ -18,19 +18,22 @@
 
       <!--<a @click="openMenu = !openMenu">Главная</a>-->
       <div class="lower" v-show="openMenu">
+        <br><center><img src="/static/images/logo.png" height="25px"></center><hr>
         <router-link to="/"><img src="/static/images/home-button.png" height="15px"> &nbsp;&nbsp;&nbsp;Главная</router-link>
         <router-link to="/services"><img src="/static/images/medicine-briefcase.png" height="15px"> &nbsp;&nbsp;&nbsp;Услуги</router-link>
         <router-link to="/prices"><img src="/static/images/tag.png" height="15px"> &nbsp;&nbsp;&nbsp;Цены</router-link>
-        <router-link to="/specialists"><img src="/static/images/doctor.png" height="15px"> &nbsp;&nbsp;&nbsp;Наши специалисты</router-link>
+        <router-link to="/specialists"><img src="/static/images/doctor.png" height="15px"> &nbsp;&nbsp;&nbsp;Специалисты</router-link>
         <router-link to="/about"><img src="/static/images/hospital-building.png" height="15px"> &nbsp;&nbsp;&nbsp;Контакты</router-link>
         <router-link to="/fordoctors"><img src="/static/images/businessman.png" height="15px"> &nbsp;&nbsp;&nbsp;Для врачей</router-link>
       </div>
-      <hr>
+
 
       <!--<a href="#">Войти</a>-->
     </nav>
-
+    <div id="container">
       <router-view></router-view>
+      <footer><hr>Информация и цены, представленные на сайте, не являются публичной офертой</footer>
+    </div>
   </div>
 
   </body>

@@ -1,6 +1,6 @@
 <template>
-<div id="container">
-<h2>Услуги клиники</h2>
+<div>
+<h2>Услуги клиники</h2><hr>
 <p>Клиника лечения позвоночника «Ноосфера» предлагает полный комплекс
     терапевтических услуг, позволяющих не просто снять болевые симптомы, а
     полностью вылечить имеющееся заболевание.</p>
@@ -8,26 +8,24 @@
   <tr>
     <td width="50%"><h3>Лечение заболеваний:</h3>
     <ol class="rectangle-list">
-      <li><router-link to="/services/neck#info">шейного отдела</router-link></li>
-      <li><router-link to="/services/chest#info">грудного отдела</router-link></li>
-      <li><router-link to="/services/lumbar#info">поясничного отдела</router-link></li>
-      <li><router-link to="/services/sacral#info">крестцового отдела</router-link></li>
-      <li><router-link to="/services/neck#info">межпозвонковых дисков</router-link></li>
-      <li><router-link to="/services/neck#info">болезни суставов</router-link></li>
-      <li><router-link to="/services/neck#info">протрузии дисков</router-link></li>
-      <li><router-link to="/services/neck#info">лечение грыжи</router-link></li>
-      <li><router-link to="/services/neck#info">лечение остеохондроза</router-link></li>
+      <router-link to="/services/neck#info"><li>шейного отдела</li></router-link>
+      <router-link to="/services/chest#info"><li>грудного отдела</li></router-link>
+      <router-link to="/services/lumbar#info"><li>поясничного отдела</li></router-link>
+      <router-link to="/services/sacral#info"><li>крестцового отдела</li></router-link>
+      <router-link to="/services/interdisk#info"><li>межпозвонковых дисков</li></router-link>
+      <router-link to="/services/joint#info"><li>болезни суставов</li></router-link>
+      <router-link to="/services/protrusion#info"><li>протрузии дисков</li></router-link>
+      <router-link to="/services/hernia#info"><li>лечение грыжи</li></router-link>
+      <router-link to="/services/osteo#info"><li>лечение остеохондроза</li></router-link>
     </ol>
     </td>
     <td><h3>Методы лечения:</h3>
     <ol class="rectangle-list">
-      <li>аппаратное лечение</li>
-      <li>мануальная терапия</li>
-      <li>остеопатия</li>
-      <li>неврология</li>
-      <li>иглорефлексотерапия</li>
-      <li>лечебный массаж</li>
-      <li>функциональная диагностика</li>
+      <router-link to="/services/machine#info"><li>аппаратное лечение</li></router-link>
+      <router-link to="/services/manual#info"><li>мануальная терапия и остеопатия</li></router-link>
+      <router-link to="/services/neurology#info"><li>неврология</li></router-link>
+      <router-link to="/services/neck#info"><li>иглорефлексотерапия</li></router-link>
+      <router-link to="/services/neck#info"><li>лечебный массаж</li></router-link>
     </ol>
     </td>
   </tr>
@@ -44,13 +42,10 @@
     background-color: white;
     padding: 2%;
     color: #333333;
-    border: 4px solid #e7e7e7;
+    border: 4px solid #F3F5F5;
     text-indent: 15px;
   }
 
-  h2{
-    text-align:center;
-  }
 
   ol{
     width:90%;
@@ -65,8 +60,10 @@
     margin: 0 auto;
     padding: 3%;
     background: #fff;
-    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
     text-indent:15px;
+    border-radius: 6px;
+
   }
 
 </style>

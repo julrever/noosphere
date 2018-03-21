@@ -7,10 +7,18 @@ import Services from '@/components/Services'
 import ForDoctors from '@/components/Fordoctors'
 import Spec from '@/components/Spec'
 import About from '@/components/About'
-import Neck from '@/components/services/Neck'
-import Chest from '@/components/services/Chest'
-import Lumbar from '@/components/services/Lumbar'
-import Sacral from '@/components/services/Sacral'
+import Neck from '@/components/services/diseases/Neck'
+import Chest from '@/components/services/diseases/Chest'
+import Lumbar from '@/components/services/diseases/Lumbar'
+import Sacral from '@/components/services/diseases/Sacral'
+import Interdisk from '@/components/services/diseases/Interdisk'
+import Joint from '@/components/services/diseases/Joint'
+import Protrusion from '@/components/services/diseases/Protrusion'
+import Hernia from '@/components/services/diseases/Hernia'
+import Osteo from '@/components/services/diseases/Osteo'
+import Machine from '@/components/services/methods/Machine'
+import Manual from '@/components/services/methods/Manual'
+import Neurology from '@/components/services/methods/Neurology'
 
 Vue.use(Router)
 
@@ -50,6 +58,46 @@ export default new Router({
           path: 'sacral',
           name: 'Sacral',
           component: Sacral
+        },
+        {
+          path: 'interdisk',
+          name: 'Interdisk',
+          component: Interdisk
+        },
+        {
+          path: 'joint',
+          name: 'Joint',
+          component: Joint
+        },
+        {
+          path: 'protrusion',
+          name: 'Protrusion',
+          component: Protrusion
+        },
+        {
+          path: 'hernia',
+          name: 'Hernia',
+          component: Hernia
+        },
+        {
+          path: 'osteo',
+          name: 'Osteo',
+          component: Osteo
+        },
+        {
+          path: 'machine',
+          name: 'Machine',
+          component: Machine
+        },
+        {
+          path: 'manual',
+          name: 'Manual',
+          component: Manual
+        },
+        {
+          path: 'neurology',
+          name: 'Neurology',
+          component: Neurology
         }
       ]
     },
