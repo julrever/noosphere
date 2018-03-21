@@ -19,6 +19,8 @@ import Osteo from '@/components/services/diseases/Osteo'
 import Machine from '@/components/services/methods/Machine'
 import Manual from '@/components/services/methods/Manual'
 import Neurology from '@/components/services/methods/Neurology'
+import Needle from '@/components/services/methods/Needle'
+import Massage from '@/components/services/methods/Massage'
 
 Vue.use(Router)
 
@@ -98,6 +100,16 @@ export default new Router({
           path: 'neurology',
           name: 'Neurology',
           component: Neurology
+        },
+        {
+          path: 'needle',
+          name: 'Needle',
+          component: Needle
+        },
+        {
+          path: 'massage',
+          name: 'Massage',
+          component: Massage
         }
       ]
     },
@@ -116,5 +128,14 @@ export default new Router({
       name: 'About',
       component: About
     }
-  ]
+  ],
+  linkExactActiveClass: "active-link",
+  scrollBehavior (to, from, savedPosition) {
+    if (to.hash) {
+    return {
+      selector: to.hash
+    }
+  }
+    return { x: 0, y: 0 }
+  }
 })

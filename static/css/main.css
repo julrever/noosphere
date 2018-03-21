@@ -122,6 +122,7 @@ nav a:hover{
     color:white;
 }
 
+
 .lower a{
   font-weight: 600;
   font-size: 13px;
@@ -156,8 +157,9 @@ footer{
   position: relative;
   padding: 3%;
 }
-.active{
-  background-color: black;
+nav .active-link{
+  background-color: #3BA5C7;
+  color: white;
 }
 .main-info{
   background-color: white;
@@ -230,13 +232,8 @@ ol ol {
     transition: all .3s ease-out;
 }
 
-.rectangle-list li:hover{
-    background: #e7eced;
-}
-
 .rectangle-list li:before{
-    content: counter(li);
-    counter-increment: li;
+    content: "";
     position: absolute;
     left: -2.5em;
     top: 50%;
@@ -247,21 +244,7 @@ ol ol {
     line-height: 2em;
     text-align: center;
     font-weight: bold;
-}
-
-.rectangle-list li:after{
-    position: absolute;
-    content: '';
-    border: .5em solid transparent;
-    left: -1em;
-    top: 50%;
-    margin-top: -.5em;
-    transition: all .3s ease-out;
-}
-
-.rectangle-list li:hover:after{
-    left: -.5em;
-    border-left-color: #59bad9;
+    opacity:0.8;
 }
 
 
@@ -315,4 +298,23 @@ ol ol {
 
 .cf:after {
   clear: both;
+}
+
+.methods-price td{
+  background-color: #f1f3f4;
+  padding: 2%;
+  color: #333333;
+  border: 4px solid white;
+  margin: auto;
+}
+
+.slide-enter-active {
+  transition: all .5s ease;
+}
+.slide-leave-active {
+  transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+
+}
+.slide-enter, .slide-leave-active {
+  opacity: 0;
 }

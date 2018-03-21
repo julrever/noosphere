@@ -24,8 +24,8 @@
       <router-link to="/services/machine#info"><li>аппаратное лечение</li></router-link>
       <router-link to="/services/manual#info"><li>мануальная терапия и остеопатия</li></router-link>
       <router-link to="/services/neurology#info"><li>неврология</li></router-link>
-      <router-link to="/services/neck#info"><li>иглорефлексотерапия</li></router-link>
-      <router-link to="/services/neck#info"><li>лечебный массаж</li></router-link>
+      <router-link to="/services/needle#info"><li>иглорефлексотерапия</li></router-link>
+      <router-link to="/services/massage#info"><li>лечебный массаж</li></router-link>
     </ol>
     </td>
   </tr>
@@ -64,6 +64,36 @@
     text-indent:15px;
     border-radius: 6px;
 
+  }
+
+
+  .rectangle-list li:after{
+      position: absolute;
+      content: '';
+      border: .5em solid transparent;
+      left: -1em;
+      top: 50%;
+      margin-top: -.5em;
+      transition: all .3s ease-out;
+      opacity:0.8;
+  }
+
+  .rectangle-list li:hover:after{
+      left: -.5em;
+      border-left-color: #59bad9;
+  }
+
+  .rectangle-list li:hover{
+      background: #e7eced;
+  }
+
+  .active-link li{
+      background: #e7eced;
+  }
+
+  .active-link li:after{
+      left: -.5em;
+      border-left-color: #59bad9;
   }
 
 </style>
