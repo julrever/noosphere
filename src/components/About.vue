@@ -15,18 +15,25 @@
   </tr>
 </table>
 
+<div class="block">
+<lightbox id="mylightbox"
+      :images="images" :album_class=" 'album' ">
+    </lightbox>
+</div>
+
+<!--
 <div class="images block" v-viewer="{movable: false, toolbar: false, title: false}">
+
+
       <img src="/static/images/01.jpg" width="32%">
       <img src="/static/images/02.jpg" width="32%">
       <img src="/static/images/03.jpg" width="32%">
       <img src="/static/images/04.jpg" width="32%">
       <img src="/static/images/05.jpg" width="32%">
       <img src="/static/images/06.jpg" width="32%">
-    </div>
-    <viewer :images="images">
-      <img v-for="src in images" :src="src" :key="src">
-    </viewer>
 
+    </div>
+-->
 
 <!--<div class="gallery cf">
   <table>
@@ -58,10 +65,59 @@
 </div>
 </template>
 
+
 <style scoped>
   .block {
   text-indent:0;
   width:80%;
   margin:auto;
   }
+
+  .album a img{
+    width:32% !important;
+    float:left;
+  }
 </style>
+
+<script>
+  import Lightbox from 'vue-simple-lightbox'
+
+  export default {
+    components: {
+      Lightbox
+    },
+    data(){
+        return{
+          images : [
+            {
+                src : '/static/images/01.jpg',
+                title : ''
+            },
+            {
+                src : '/static/images/02.jpg',
+                title : ''
+            },
+            {
+                src : '/static/images/03.jpg',
+                title : ''
+            },
+            {
+                src : '/static/images/04.jpg',
+                title : 'Аппарат DRX9000'
+            },
+            {
+                src : '/static/images/05.jpg',
+                title : ''
+            },
+            {
+                src : '/static/images/06.jpg',
+                title : 'Аппарат DRX9000'
+            },
+          ],
+          options : {
+            closeText : 'х'
+          }
+        }
+      }
+  }
+</script>

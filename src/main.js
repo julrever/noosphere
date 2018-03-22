@@ -6,10 +6,6 @@ import router from './router'
 import Viewer from 'v-viewer'
   Vue.use(Viewer)
 
-
-Vue.config.productionTip = false
-
-
 new Vue({
   el: '#main',
   router,
