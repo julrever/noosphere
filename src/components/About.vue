@@ -15,7 +15,20 @@
   </tr>
 </table>
 
-<div class="gallery cf">
+<div class="images block" v-viewer="{movable: false, toolbar: false, title: false}">
+      <img src="/static/images/01.jpg" width="32%">
+      <img src="/static/images/02.jpg" width="32%">
+      <img src="/static/images/03.jpg" width="32%">
+      <img src="/static/images/04.jpg" width="32%">
+      <img src="/static/images/05.jpg" width="32%">
+      <img src="/static/images/06.jpg" width="32%">
+    </div>
+    <viewer :images="images">
+      <img v-for="src in images" :src="src" :key="src">
+    </viewer>
+
+
+<!--<div class="gallery cf">
   <table>
     <tr>
   <td>
@@ -40,6 +53,15 @@
   </td>
     </tr>
 </table>
-</div>
+</div>-->
+
 </div>
 </template>
+
+<style scoped>
+  .block {
+  text-indent:0;
+  width:80%;
+  margin:auto;
+  }
+</style>
