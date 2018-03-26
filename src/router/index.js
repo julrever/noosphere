@@ -25,6 +25,7 @@ import Massage from '@/components/services/methods/Massage'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -129,7 +130,7 @@ export default new Router({
       component: About
     }
   ],
-  linkExactActiveClass: "active-link",
+  linkActiveClass: "active-link",
   scrollBehavior (to, from, savedPosition) {
     if (to.hash) {
     return {

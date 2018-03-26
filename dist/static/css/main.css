@@ -87,7 +87,8 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 0.5px solid #566363; /*F1EAE0*/
+  border-top: 0.5px solid #566363;
+  opacity: 0.5;
 }
 
 
@@ -160,6 +161,9 @@ footer{
 nav .active-link{
   background-color: #3BA5C7;
   color: white;
+}
+#logo {
+  background-color: transparent !important;
 }
 .main-info{
   background-color: white;
