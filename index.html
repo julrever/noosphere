@@ -9,9 +9,25 @@
   </head>
   <body>
     <div id="main">
-    <nav>
+    <nav v-bind:class="{ 'menu-opened': isActive }">
+      <div class="only-mobile">
+      <div class="burger-container" v-on:click="isActive = !isActive">
+      <div id="burger">
+        <div class="bar topBar"></div>
+        <div class="bar btmBar"></div>
+      </div>
+    </div>
+    <ul class="menu" v-on:click="isActive = !isActive">
+      <li class="menu-item"><router-link to="/" exact><img src="/static/images/home-button.png" height="15px">&nbsp;&nbsp;&nbsp;Главная</router-link></li>
+      <li class="menu-item"><router-link to="/services"><img src="/static/images/medicine-briefcase.png" height="15px"> &nbsp;&nbsp;&nbsp;Услуги</router-link></li>
+      <li class="menu-item"><router-link to="/prices"><img src="/static/images/tag.png" height="15px"> &nbsp;&nbsp;&nbsp;Цены</router-link></li>
+      <li class="menu-item"><router-link to="/specialists"><img src="/static/images/doctor.png" height="15px"> &nbsp;&nbsp;&nbsp;Специалисты</router-link></li>
+      <li class="menu-item"><router-link to="/about"><img src="/static/images/hospital-building.png" height="15px"> &nbsp;&nbsp;&nbsp;Контакты</router-link></li>
+      <li class="menu-item"><router-link to="/fordoctors"><img src="/static/images/businessman.png" height="15px"> &nbsp;&nbsp;&nbsp;Для врачей</router-link></li>
+    </ul>
+  </div>
 
-      <div class="lower" v-show="openMenu">
+      <div class="lower  hide-mobile">
         <br><router-link to="/" active-class="" tag="p"><center><img src="/static/images/logo.png" height="25px"></center></router-link><hr>
         <router-link to="/" exact><img src="/static/images/home-button.png" height="15px"> &nbsp;&nbsp;&nbsp;Главная</router-link>
         <router-link to="/services"><img src="/static/images/medicine-briefcase.png" height="15px"> &nbsp;&nbsp;&nbsp;Услуги</router-link>
@@ -30,6 +46,9 @@
       <footer><hr>Информация и цены, представленные на сайте, не являются публичной офертой</footer>
     </div>
   </div>
+  <script src="/static/js/vendor.js">
+  <script src="/static/js/app.js">
 
+  </script>
   </body>
 </html>

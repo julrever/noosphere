@@ -275,7 +275,7 @@ tr {
   color: #5c5c5c;
   font-size: 15px;
 }
-
+@media all and (min-width: 500px) {
 table:hover td {
   color: #dbdbdb;
   font-weight: 100;
@@ -285,6 +285,7 @@ table:hover td {
 table:hover tr:hover td {
 	color: #444;
 	text-shadow: 0 1.5px 0 #fff;
+}
 }
 
 tr:first-child {

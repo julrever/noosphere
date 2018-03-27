@@ -10,6 +10,10 @@ new Vue({
   el: '#main',
   router,
   data: {
-    openMenu: true
+    isActive: false,
+  },
+  methods: {
+    openMenu: function() {
+    }
   }
 })
