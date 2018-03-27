@@ -6,6 +6,7 @@ import router from './router'
 import Viewer from 'v-viewer'
   Vue.use(Viewer)
 
+
 new Vue({
   el: '#main',
   router,

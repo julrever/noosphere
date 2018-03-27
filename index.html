@@ -11,6 +11,7 @@
     <div id="main">
     <nav v-bind:class="{ 'menu-opened': isActive }">
       <div class="only-mobile">
+        <a href="tel:+78123210195" id="tel">+7(812)-321-01-95</a>
       <div class="burger-container" v-on:click="isActive = !isActive">
       <div id="burger">
         <div class="bar topBar"></div>
@@ -25,6 +26,7 @@
       <li class="menu-item"><router-link to="/about"><img src="/static/images/hospital-building.png" height="15px"> &nbsp;&nbsp;&nbsp;Контакты</router-link></li>
       <li class="menu-item"><router-link to="/fordoctors"><img src="/static/images/businessman.png" height="15px"> &nbsp;&nbsp;&nbsp;Для врачей</router-link></li>
     </ul>
+
   </div>
 
       <div class="lower  hide-mobile">
@@ -46,8 +48,7 @@
       <footer><hr>Информация и цены, представленные на сайте, не являются публичной офертой</footer>
     </div>
   </div>
-  <script src="/static/js/vendor.js">
-  <script src="/static/js/app.js">
+
 
   </script>
   </body>

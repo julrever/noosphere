@@ -565,4 +565,15 @@ nav {
          transition-delay: 0.1s;
 }
 
+#tel
+{
+  top:17px;
+  right: 10px;
+  position: fixed;
+  text-align: right;
+}
+
+.mobile-p{
+  padding:3%;
+}
 }

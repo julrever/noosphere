@@ -1,10 +1,10 @@
 <template>
 <div>
 <h2>Услуги клиники</h2><hr>
-<p>Клиника лечения позвоночника «Ноосфера» предлагает полный комплекс
+<p class="mobile-p">Клиника лечения позвоночника «Ноосфера» предлагает полный комплекс
     терапевтических услуг, позволяющих не просто снять болевые симптомы, а
     полностью вылечить имеющееся заболевание.</p>
-<table width="100%">
+<table width="100%" class="hide-mobile">
   <tr>
     <td width="50%"><h3>Лечение заболеваний:</h3>
     <ol class="rectangle-list">
@@ -30,6 +30,16 @@
     </td>
   </tr>
 </table>
+
+<div class="block only-mobile">
+<ol class="rectangle-list">
+  <router-link to="/services/machine#info"><li>аппаратное лечение</li></router-link>
+  <router-link to="/services/manual#info"><li>мануальная терапия и остеопатия</li></router-link>
+  <router-link to="/services/neurology#info"><li>неврология</li></router-link>
+  <router-link to="/services/needle#info"><li>иглорефлексотерапия</li></router-link>
+  <router-link to="/services/massage#info"><li>лечебный массаж</li></router-link>
+</ol>
+</div>
 
 <router-view></router-view>
 </div>
